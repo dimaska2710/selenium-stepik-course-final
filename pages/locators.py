@@ -19,3 +19,4 @@ class ProductPageLocators:
     ALERT_INFO_BASKET_TOTAL_COST = (By.CSS_SELECTOR, ".alert:nth-child(3) p:nth-child(1) strong")
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main p.price_color")
+    SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert:nth-child(1)")

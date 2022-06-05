@@ -31,3 +31,11 @@ class ProductPage(MainPage):
     def should_have_product_page(self):
         self.should_have_correct_name_in_message()
         self.should_have_correct_cost_in_basket()
+
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Success message is presented, but should not be"
+
+    def should_disappear(self):
+        assert self.is_disappeared(*ProductPageLocators.SUCCESS_MESSAGE), \
+            "Element should have disappeared, but it have not"
