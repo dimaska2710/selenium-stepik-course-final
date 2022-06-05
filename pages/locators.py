@@ -5,6 +5,7 @@ class BasePageLocators:
 
     LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
     LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+    BASKET_LINK = (By.CSS_SELECTOR, ".btn-group a.btn-default")
 
 
 class MainPageLocators:
@@ -25,3 +26,9 @@ class ProductPageLocators:
     PRODUCT_NAME = (By.CSS_SELECTOR, ".product_main h1")
     PRODUCT_PRICE = (By.CSS_SELECTOR, ".product_main p.price_color")
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert:nth-child(1)")
+
+
+class BasketPageLocators:
+
+    BASKET_IS_EMPTY = (By.CSS_SELECTOR, "#content_inner")
+    ITEMS_TO_BUY_NOW = (By.CSS_SELECTOR, ".col-sm-6.h3")
